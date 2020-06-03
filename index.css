@@ -11,6 +11,7 @@ html{
 }
 body{
     margin: 0;
+    margin-top: 40px;
     padding: 0;
     line-height: 1.6;
     font-size: 16px;
@@ -53,7 +54,7 @@ a{
 #splash{
     background: url(baltimore.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 250px;
     width: 100%; 
     transform: scale(1.1);
     filter: grayscale(70%) brightness(50%);
@@ -72,6 +73,10 @@ a{
 }
 
 #navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
     font-size: 14px;
     list-style-type: none;
     margin: 0;
@@ -79,6 +84,7 @@ a{
     overflow: auto;
     background-color: #454545;
     border-top: 4px solid var(--accent);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 #navbar li {
