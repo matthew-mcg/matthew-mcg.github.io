@@ -1,7 +1,6 @@
 # MisterMista.github.io
 
 TODO
- - add navigation bar at top (with drop shadow to look nice)
- - better color theme
- - boxes/dividers for sections
+ - more information
+   - information about projects I have created or contributed to
  - _responsive design_
