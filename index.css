@@ -1,53 +1,43 @@
 /* Background pattern from Toptal Subtle Patterns */
 
 body{
-    background: url(background.png) repeat 0 0;
     margin: 40px auto;
-    max-width: 650px;
+    max-width: 1000px;
     line-height: 1.6;
     font-size: 16px;
-    font-family: Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     color: #454545;
+    background-color: #eedddd;
     padding: 0 10px;
 }
 h1, h2, h3{
+    font-family: Helvetica, sans-serif;
     line-height: 1.2;
 }
 a{
     color:#0077aa;
 }
-#refresh{
+.wrap{
+    height: 100%;  
+    position: relative;
+    overflow: hidden;
+}
+#splash{
+    background: url(baltimore.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    width: 100%; 
+    transform: scale(1.1);
+    -webkit-filter: grayscale(70%);
+    
+}
+.wrap h1{
+    color: #cccccc;
+    font-size: 300%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     position: absolute;
-    width: 100px;
-    height: 40px;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    background-color: rgba(238,238,238,1);
-    right: 20px;
-    border: none;
-    box-shadow: 4px 4px grey;
-}
-
-#footer{
-    text-align: center;
-    font-size: 12px;
-}
-#color{
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    /*background-color: rgba(0,127,255,.25);*/
-}
-.backsplash{
-    height: auto;
-    width: 100%;
-    background-color: rgba(238,238,238,.7);
-    box-shadow: 4px 4px grey;
-}
-.backsplash>div{
-    margin: 10px;
+    transform: translate3d(-50%, -50%, 0);
 }
