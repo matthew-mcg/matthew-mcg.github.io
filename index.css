@@ -1,21 +1,49 @@
 /* Background pattern from Toptal Subtle Patterns */
-
+/* Splash image from BruceEmmerling on Pixabay */
+html{
+    margin: 0;
+    padding: 0;
+    --accent-red: #f5624d;
+    --accent-blue: #4D8CF5;
+    --accent-teal: #4DE0F5;
+    --accent-redp: #ffb3ba;
+    --accent: var(--accent-red);
+}
 body{
-    margin: 40px auto;
-    max-width: 1000px;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
     font-size: 16px;
-    font-family: "Times New Roman", Times, serif;
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-family: 'Montserrat', Helvetica, sans-serif;
     color: #454545;
-    background-color: #eedddd;
-    padding: 0 10px;
+    background: url(leaves.png) repeat 0 0;
+    background-attachment: fixed;
+    background-color: #eee;
+}
+#page {
+    /*margin: 16px 64px;*/
+}
+article {
+    background-color: rgba(220, 220, 220, 0.7);
+    border: solid 2px var(--accent);
+}
+#page h1 {
+    width: 100%;
+    background-color: #454545;
+    color: #eee;
+    padding: 8px 36px;
+}
+article {
+    padding: 8px 32px;
+    margin: 16px 16px;
+
 }
 h1, h2, h3{
-    font-family: Helvetica, sans-serif;
     line-height: 1.2;
 }
 a{
-    color:#0077aa;
+    color:#60cfff;
 }
 .wrap{
     height: 100%;  
@@ -28,16 +56,53 @@ a{
     height: 200px;
     width: 100%; 
     transform: scale(1.1);
-    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%) brightness(50%);
     
 }
 .wrap h1{
-    color: #cccccc;
-    font-size: 300%;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #eee;
+    font-family: 'Lobster';
+    font-size: 64px;
+    text-shadow: 8px 8px 0px var(--accent);
     position: absolute;
     top: 50%;
     left: 50%;
     text-align: center;
     transform: translate3d(-50%, -50%, 0);
+}
+
+#navbar {
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #454545;
+    border-top: 4px solid var(--accent);
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: #eee;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  
+#navbar li a:hover {
+    background-color: #0e0e0e;
+}
+  
+#footer {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 14px;
+    position: bottom;
+    width:100%;
+    color: #eee;
+    background-color: #3f3c3c;
 }
