@@ -26,20 +26,19 @@ body{
     /*margin: 16px 64px;*/
 }
 article {
-    background-color: rgba(220, 220, 220, 0.7);
+    background-color: rgba(230, 230, 230, 0.7);
     border: solid 2px var(--accent);
+    max-width: 1000px;
+    padding: 8px 32px;
+    margin: 16px auto;
 }
 #page h1 {
     width: 100%;
     background-color: #454545;
     color: #eee;
-    padding: 8px 36px;
+    padding: 8px 48px;
 }
-article {
-    padding: 8px 32px;
-    margin: 16px 16px;
 
-}
 h1, h2, h3{
     line-height: 1.2;
 }
@@ -64,7 +63,7 @@ a{
     color: #eee;
     font-family: 'Lobster';
     font-size: 64px;
-    text-shadow: 8px 8px 0px var(--accent);
+    text-shadow: 8px 8px 0px var(--accent), 16px 16px 4px rgba(0,0,0,0.5);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -110,5 +109,5 @@ a{
     position: bottom;
     width:100%;
     color: #eee;
-    background-color: #3f3c3c;
+    background-color: #454545;
 }
